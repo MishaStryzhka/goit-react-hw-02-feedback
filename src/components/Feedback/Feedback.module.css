@@ -1,0 +1,17 @@
+.statistics {
+    margin-top: 25px;
+    background-color: #ffffff;
+    width: 300px;
+    text-align: center;
+}
+
+.title {
+
+    /* text-transform: uppercase; */
+    padding-top: 25px;
+}
+
+.list {
+    margin-top: 25px;
+    display: flex;
+}
