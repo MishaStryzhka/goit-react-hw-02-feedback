@@ -1,7 +1,8 @@
-import PropTypes from 'prop-types';
+import { Component } from 'react';
+
 import css from './Feedback.module.css';
 
-import { Component } from 'react';
+
 class Feedback extends Component {
     state = {
         good: 0,
@@ -44,10 +45,5 @@ class Feedback extends Component {
         )
     }
 };
-
-Feedback.propTypes = {
-    title: PropTypes.string,
-    stats: PropTypes.array,
-}
 
 export default Feedback;
