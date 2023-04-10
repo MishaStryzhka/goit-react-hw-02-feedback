@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
-const FeedbackOptions = ({ handeIncrement }) => {
+const FeedbackOptions = ({ handeIncrement, options }) => {
     return <div className={css.section}>
-        <button className={css.button} onClick={(e) => { handeIncrement(e.currentTarget.name) }} name='good'>Good</button>
+        {options.map(option => <button className={css.button} onClick={(e) => { handeIncrement(e.currentTarget.name) }} name={option.toLowerCase()}>{option}</button>)}
+        {/* <button className={css.button} onClick={(e) => { handeIncrement(e.currentTarget.name) }} name='good'>Good</button>
         <button className={css.button} onClick={(e) => { handeIncrement(e.currentTarget.name) }} name='neutral'>Neutral</button>
-        <button className={css.button} onClick={(e) => { handeIncrement(e.currentTarget.name) }} name='bad'>Bad</button>
+        <button className={css.button} onClick={(e) => { handeIncrement(e.currentTarget.name) }} name='bad'>Bad</button> */}
     </div>
 }
 
